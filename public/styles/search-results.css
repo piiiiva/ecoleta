@@ -1,12 +1,17 @@
 /* body::after - criando um fundo diferente, com duas cores, sem ter que dividir o html em dois elementos */
+body {
+    background-color: #fff;
+}
+
 body::after {
     content: "";
-    position: fixed;
-    background: #fff;
-    top: 260px;
+    position: absolute;
+    background: #f0f0f5;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+    height: 16rem;
     z-index: -1;
 }
 

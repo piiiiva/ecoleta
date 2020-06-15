@@ -15,7 +15,7 @@ nunjucks.configure('src/views', {
 
 
 server.get('/', (req, res) => {
-    return res.render('index.html', {title: 'Seu marketplace de coleta de resíduos'})
+    return res.render('index.html')
 })
 
 server.get('/create-point', (req, res) => {
@@ -23,7 +23,6 @@ server.get('/create-point', (req, res) => {
 })
 
 server.post("/savepoint", (req, res) => {
-    console.log(req.body)
     const query = `
         INSERT INTO places (
             image,
@@ -51,10 +50,7 @@ server.post("/savepoint", (req, res) => {
             return console.log(err)
         }
 
-        console.log("Cadastrado com sucesso")
-        console.log(this)
-
-        return res.send("ok")
+        return res.render('create-point.html', { saved: true })
     }
 
     db.run(query, values, afterIsertData)
@@ -64,7 +60,9 @@ server.get('/search', (req, res) => {
     // Pegar os dados do banco de dados
     db.all(`SELECT * FROM places`, function(err, rows) {
         if (err) {
-            return console.log(err)
+            console.log(err)
+
+            return res.send("Erro no cadastro")
         }
 
         const total = rows.length

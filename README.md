@@ -8,7 +8,6 @@
 
 <div align="center">
 
-
 ![GitHub language count](https://img.shields.io/github/languages/count/piiiiva/ecoleta)
 ![GitHub top language](https://img.shields.io/github/languages/top/piiiiva/ecoleta)
 ![GitHub repo size](https://img.shields.io/github/repo-size/piiiiva/ecoleta)
@@ -19,8 +18,8 @@
 <p align="center">
     <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-como-baixar-o-projeto">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-como-construir">Como construir</a>
+    <a href="#-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-trilha-booster">Trilha Booster</a>
 </p>
 
 
